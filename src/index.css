@@ -35,7 +35,6 @@ code {
 
 .progressPercent {
   font-weight: 600;
-
   position: absolute;
   left: 50%;
   top: 50%;
@@ -46,7 +45,7 @@ code {
 
 .btn {
   display: block;
- 
+
   border: none;
   border-radius: 3px;
   outline: none;
@@ -65,9 +64,8 @@ code {
   box-shadow: inset 100px 0 0 0 #7c54d1;
 }
 
-.button{
-  display:flex;
+.button {
+  display: flex;
   margin: 20px;
   justify-content: space-around;
-
 }

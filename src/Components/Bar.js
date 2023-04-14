@@ -13,11 +13,11 @@ const Bar = () => {
     }
   };
 
-  useEffect(() => {
-    if (progress < 100 && isRunning) {
+ if (progress < 100 && isRunning) {
       setTimeout(() => setProgress((prev) => (prev += 1)), 50);
     }
-  }, [progress, isRunning]);
+
+    
   return (
     <div className="container">
       <h1>Progress Bar</h1>
