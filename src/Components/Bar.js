@@ -1,23 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import Slider from "./Slider";
 
 const Bar = () => {
   const [progress, setProgress] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
 
-
   const handleProgress = () => {
-   
-    if(progress == 100){
-        setProgress(0)
-        setIsRunning(false)
+    if (progress === 100) {
+      setProgress(0);
+      setIsRunning(false);
     }
   };
 
- if (progress < 100 && isRunning) {
-      setTimeout(() => setProgress((prev) => (prev += 1)), 50);
-    }
+  if (progress < 100 && isRunning) {
+    setTimeout(() => setProgress((prev) => (prev += 1)), 50);
+  }
 
-    
   return (
     <div className="container">
       <h1>Progress Bar</h1>
@@ -32,12 +30,17 @@ const Bar = () => {
         ></div>
         <span className="progressPercent">{progress}%</span>
       </div>
+
       <div className="button">
-      <button className="btn" onClick={()=>setIsRunning(!isRunning)}>
-        Run
-      </button>
-      <button className="btn" onClick={handleProgress}>Reset</button>
+        <button className="btn" onClick={() => setIsRunning(!isRunning)}>
+          Run
+        </button>
+        <button className="btn" onClick={handleProgress}>
+          Reset
+        </button>
       </div>
+
+      <Slider />
     </div>
   );
 };
