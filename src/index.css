@@ -46,7 +46,7 @@ code {
 
 .btn {
   display: block;
-  margin: 5rem auto;
+ 
   border: none;
   border-radius: 3px;
   outline: none;
@@ -63,4 +63,11 @@ code {
 .btn:hover {
   -webkit-box-shadow: inset 100px 0 0 0 #7c54d1;
   box-shadow: inset 100px 0 0 0 #7c54d1;
+}
+
+.button{
+  display:flex;
+  margin: 20px;
+  justify-content: space-around;
+
 }
